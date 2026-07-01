@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Keep this page out of search engines -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Move my car</title>
+  <style>
+    :root { --accent: #1d4ed8; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f4;
+      color: #1c1917;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      padding: 32px 28px 28px;
+      text-align: center;
+    }
+    h1 { font-size: 1.5rem; margin: 0 0 6px; }
+    p.sub { margin: 0 0 24px; color: #57534e; font-size: 1rem; }
+    .contact { margin: 18px 0; }
+    .contact .who { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+    a.call {
+      display: block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 18px;
+      border-radius: 14px;
+      margin: 10px 0;
+    }
+    a.call:active { opacity: 0.85; }
+    .note { margin-top: 22px; font-size: 0.85rem; color: #78716c; line-height: 1.4; }
+    .emoji { font-size: 2.5rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🚗</div>
+    <h1>Sorry! My car is in the way!</h1>
+    <p class="sub">Tap below to call me and I'll move it right away.</p>
+
+    <!-- =========================================================
+         EDIT HERE: one .contact block per person.
+         The number goes ONLY in the href (tel:...), so it is not
+         displayed on screen. Use a Google Voice number if you have one.
+         ========================================================= -->
+    <div class="contact">
+      <div class="who">Saahil</div>
+      <a class="call" href="tel:+15551234567">📞 Call to move the car</a>
+    </div>
+
+    <div class="contact">
+      <div class="who">Second person (optional)</div>
+      <a class="call" href="tel:+15559876543">📞 Call second contact</a>
+    </div>
+    <!-- ========================================================= -->
+
+    <p class="note">Thanks for your patience — I'll be there in a minute.</p>
+  </div>
+</body>
+</html>
